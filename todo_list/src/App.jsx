@@ -10,8 +10,7 @@ function App() {
   const [edit,setEdit] = useState(null);
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
-  const [priority, setPriority] = useState("Medium"); //  ak Default 
-
+  const [priority, setPriority] = useState("Medium"); //  ek Default 
 
   const handleAdd = () => {
     const trimmedTitle = title.trim();
@@ -27,7 +26,6 @@ function App() {
       return;
     }
     
-
     const newTodo = {
       id: Date.now(),
       title: trimmedTitle,
